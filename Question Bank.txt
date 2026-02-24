@@ -1,0 +1,92 @@
+Gen AI API key - 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
+
+------------------------------------------------------------
+- web notes
+
+[Frontend] html + css ---> JS ---> DOM ---> React/angular
+				    |
+				   API
+				    |
+[BACKEND] .net ---> Express --->  MONGO
+
+
+Activity --> 
+		type conversion for all datatypes
+
+
+dom is the bridge between JS and webpage 
+is a programing interface fro html , when browser load on html page it converts html is an object 
+that objects structure is called dom. 
+js uses dom for the modify , access  , and controlling structure of the webpage 
+
+
+dom manipiulation means chaing html to js (show error mess , display succes mess, change text color - these are some examples)
+
+
+EVENT - > 
+event is an action that are happens in browser - cliking a button, moving mouse , pressing key, submitting form and loading page 
+
+javascript detect this event and perform some action .
+
+types of event - > mouse event , keyboard event and browser event
+
+mouse event types - > clik dblclick , mouseover , mouseout 
+keyboard event types - > keydown , keyup
+browser event types - > load page , resize page , scroll page 
+
+j query , type timestamp default prevented target sourse element current target , screen x,y,alt key,
+
+add event lister is a js method used to attach and event handel to an html so that the specific fun run when one perticul event occure 
+
+
+------------------------------------------------------------
+- .net notes
+
+c# sc     c# compiler 
+----->    -----------> -
+			-
+js sc     js com 	 -
+----->    ----------->    -
+     			   -------------intermediate language ----> just in time  ---> machine code
+python sc  py com
+---------> ---------->
+
+java sc   java compiler
+--------> --------------->
+
+
+Delegates ="directly call is possible outside of class" is the address of the method and function 
+
+event handling :- 
+	An event is the notification mechanism 
+	"event allows object communicate each other by sending signals when something interesting occurs"
+	"can not directly call is posible "
+
+difference between delegates and event handling 
+
+
+
+
+
+
+-------------------------------------------------------------
+
+Questions 
+
+what is node js and  js 
+
+
+primitive and non premitive 
+
+
+diff bet let const var
+
+CLR IL JSC what it means and what si 
+
+-------------------------------------------------------------
+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
+
+diff bet == ===
+
+-------------------------------
+
