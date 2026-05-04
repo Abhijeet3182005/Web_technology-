@@ -1,0 +1,88 @@
+/* Background same as login */
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+}
+
+/* Container */
+.question-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glass effect card */
+.question-box {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 15px;
+  width: 320px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  animation: fadeIn 1s ease-in;
+}
+
+/* Title */
+.question-box h1 {
+  margin-bottom: 10px;
+}
+
+/* Question text */
+.question-box p {
+  margin-top: 15px;
+}
+
+/* Select styling */
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+/* Button */
+button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: #ff7e5f;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+button:hover {
+  transform: scale(1.05);
+  background: #ff5a3c;
+}
+
+/* Click effect */
+button:active {
+  transform: scale(0.95);
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}

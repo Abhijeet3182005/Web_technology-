@@ -1,0 +1,33 @@
+
+SPA : single page application 
+- ex insta FB
+- when we click page does not load 
+
+***virtual dom***
+- react crates copy of real dom its called virtual dom
+- when data changes react updates virtual dom 
+- updates only changed parts in real dom
+- used for the high performance (fast data fetching)
+
+tool installation : npm, node
+
+vite : vite is a fast build tool 
+npm install : installs dependencies 
+npm run dev 
+
+index.html : entry html file
+main.jsx is a entry point of react app 
+components/ :reusable UI parts
+
+JSX : jS + html
+it means it allows to write html code into the JS code 
+const ele = <
+
+rules :
+- must return single parent 
+- use {} for JS
+
+component is a heart of react 
+two types of components 
+
+functional component 

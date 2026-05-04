@@ -1,0 +1,85 @@
+========================= ROADMAP =========================
+
+
+FRONTEND                                  BACKEND
+----------------------------------------------------------
+
+HTML + CSS (Basics)                       .NET        EXPRESS
+        ||                                   ||          ||
+        ||                                   ||          ||
+JavaScript                               --------------------
+        ||                                        |
+        ||                                        |
+DOM  --------------------->  API  <---------------+
+        ||                                        |
+        ||                                   MongoDB
+React / Angular
+
+
+===========================================================
+
+
+
+
+
+
+---------------	TYPES of datatypes ----------
+
+PRIMITIVE datatypes-:
+✅ Primitive (Immutable)
+
+Number
+String
+Boolean
+Undefined
+Null
+BigInt
+Symbol
+
+
+let   const    var  
+
+Feature			var					let					const
+
+Scope			Function Scoped		Block Scoped			Block Scoped
+Hoisting		Yes (returns undefined)	Yes (Reference Error)	Yes (Reference Error)
+Reassignable		Yes					Yes					No
+Redeclarable		Yes					No					No
+
+
+
+✅ Non-Primitive (Reference)
+
+-Object
+-Array
+-Function
+-Date
+-RegExp
+
+👉 Primitive → stores value directly
+👉 Non-Primitive → stores reference (memory address)
+
+Questions :
+1.what is node.js and javascript
+2 difference between let const var
+3.difference bet.  ==   and  ===
+4. diff. bt. .net and .net core
+
+.NET Framework – Definition
+.NET Framework is a Windows-only software framework developed by Microsoft used to build desktop, web, and Windows applications, mainly for legacy systems.
+
+.NET Core – Definition
+.NET Core is a cross-platform, open-source, and high-performance framework developed by Microsoft to build modern web, API, cloud, and microservices-based applications.
+
+| Feature    		 | **.NET Framework**       		| **.NET Core**                          |
+
+| Platform    		| Windows only          		| Cross-platform (Windows, Linux, macOS) |
+| Performance		 | Slower                 		  | Faster & lightweight                   |
+| Deployment 		 | System-wide installation | Self-contained deployment              |
+| Open Source 		| ❌ No                 		    | ✅ Yes                                  |
+| Cloud Ready 		| Limited          	        | Fully cloud & microservices friendly   |
+| CLI Support 		| Limited                 		 | Strong CLI (`dotnet` command)          |
+| Updates     		| Slow                    		 | Frequent updates                       |
+| Usage       		| Legacy & desktop apps    	| Modern web, API, cloud apps            |
+
+*** .NET Core + .NET Framework are now merged into just .NET (from .NET 5 onwards) 

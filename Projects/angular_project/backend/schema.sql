@@ -1,0 +1,24 @@
+CREATE DATABASE IF NOT EXISTS progress_tracker;
+USE progress_tracker;
+
+CREATE TABLE IF NOT EXISTS Users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS Entries (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    date DATE NOT NULL,
+    study_hours DECIMAL(5, 2) NOT NULL DEFAULT 0,
+    learning_hours DECIMAL(5, 2) NOT NULL DEFAULT 0,
+    wasted_hours DECIMAL(5, 2) NOT NULL DEFAULT 0,
+    activity_hours DECIMAL(5, 2) NOT NULL DEFAULT 0,
+    score DECIMAL(5, 2) NOT NULL DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES Users(id) ON DELETE CASCADE,
+    UNIQUE KEY unique_user_date (user_id, date)
+);

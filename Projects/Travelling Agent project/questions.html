@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel Guide - Questions</title>
+  <link rel="stylesheet" href="ques-design.css">
+</head>
+<body class="fade-in">
+
+<div class="question-container">
+  <div class="question-box">
+
+    <h1>Tell us about your trip ✈️</h1>
+    <h2 id="userWelcome"></h2>
+
+    <p>1. Your Budget?</p>
+<input type="number" id="budget" placeholder="Enter budget (₹ 10,000 - ₹ 10,00,000)">    <p>2. Your Interest?</p>
+    <select id="interest">
+      <option value="nature">Nature</option>
+      <option value="adventure">Adventure</option>
+      <option value="food">Food</option>
+      <option value="history">History</option>
+    </select>
+
+    <p>3. Travel Type?</p>
+    <select id="type">
+      <option value="solo">Solo</option>
+      <option value="family">Family</option>
+      <option value="friends">Friends</option>
+    </select>
+
+    <button onclick="saveAnswers()">Next</button>
+
+  </div>
+</div>
+
+<script src="script-ques.js"></script>
+</body>
+</html>

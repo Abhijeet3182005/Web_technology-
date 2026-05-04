@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Learning</title>
+
+    <style>
+        body {
+            background-color: #212121;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+
+        .heading {
+            color: orange;
+        }
+
+        .list-item {
+            margin: 5px 0;
+            cursor: pointer;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1 id="title" class="heading">
+            DOM Learning Practice
+            <span style="display: none;">Hidden Text</span>
+        </h1>
+
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+
+        <p id="para">Lorem ipsum dolor sit amet consectetur.</p>
+
+        <input type="password" id="passwordInput">
+
+        <br><br>
+        <button id="changeTextBtn">Change Title</button>
+        <button id="addItemBtn">Add List Item</button>
+
+        <ul id="myList">
+            <li class="list-item">One</li>
+            <li class="list-item">Two</li>
+            <li class="list-item">Three</li>
+            <li class="list-item">Four</li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

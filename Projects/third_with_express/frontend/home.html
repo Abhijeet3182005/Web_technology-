@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+<div id="container">
+<h1>User Auth System</h1>
+<p>Simple authentication app using Express & MySQL</p>
+
+<div id="guest">
+  <a href="signup.html"><button>Signup</button></a>
+  <a href="login.html"><button>Login</button></a>
+</div>
+
+<div id="user" style="display:none;">
+  <h3 id="welcome">Welcome User  </h3>
+  <a href="profile.html"><button>Go to Profile</button></a>
+  <button onclick="logout()">Logout</button>
+</div>
+</div>
+
+<script>
+const token = localStorage.getItem("token");
+
+  if (token) {
+    document.getElementById("guest").style.display = "none";
+    document.getElementById("user").style.display = "block";
+  }
+  document.getElementById("welcome").innerText += token ? "Back!" : "Guest!";
+
+function logout() {
+  localStorage.removeItem("token");
+  alert("Logged out");
+  window.location.reload();
+}
+</script>
+
+</body>
+</html>

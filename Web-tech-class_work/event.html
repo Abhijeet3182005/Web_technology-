@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Events Demo</title>
+
+    <style>
+        body {
+            background-color: #414141;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 15px;
+        }
+
+        img {
+            width: 200px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            color: lightblue;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Amazing Images (Click to Remove)</h2>
+
+    <ul id="images">
+        <li>
+            <img id="photoshop" src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
+                alt="Photoshop Logo" >
+            <!-- html should contians structure and js should contains logic so mixing both
+                 is BAD practice hard to maintiain in BIG projects -->
+
+        </li>
+
+        <li>
+            <img id="japan" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Mount Fuji">
+        </li>
+
+        <li>
+            <img id="Nature" src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b" alt="Nature Image">
+        </li>
+
+        <li>
+            <img id="photoman" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Photographer">
+        </li>
+
+        <li>
+            <img id="tiger" src="https://images.unsplash.com/photo-1546182990-dffeafbe841d" alt="Tiger">
+        </li>
+
+        <li>
+            <a href="https://google.com" id="google">Visit Google</a>
+        </li>
+    </ul>
+</body>
+<script>
+    document.getElementById("tiger").onclick = function () {
+        alert("You clicked the tiger image!");
+    };
+
+    document.getElementById("Nature").addEventListener('click', function (e) {
+        console.log(e);
+
+    });
+    //<!--event prapogation -->
+    document.getElementById("images").addEventListener('click', function () {
+        console.log(" clicking inside the UL");
+    });
+    document.getElementById("photoshop").addEventListener('click', function () {
+        console.log(" clicking on photoshop image");
+    });
+    document.getElementById("google").addEventListener('click', function (e) {
+        e.preventDefault(); // this will prevent default behaviour of anchor tag
+        console.log(" you clicked on google link");
+    });
+    //event prapogation - when we click on photoshop image then event will prapogate to parent element and then to parent of parent element and so on until it reach to document object
+    //event bubbling(child to parent ) - when we click on photoshop image then event will first trigger on photoshop image and then it will trigger on parent element and then to parent of parent element and so on until it reach to document object]
+    // bydefalut false and when true (parent to child ) 
+
+</script>
+</html>
+<!-- home activity :
+1.j query
+2.type timestamp defalut prevented
+3.target source element clent x and client y  screen x and screen y
+5.alt key cntrol jey shift key 
+6.remove the image when click on image - but by refresh the image should come backs
+
+-->
+ <!-- select element assign function to clikc event when clicked function run  
+        problem :- only one event can be assign cant assign multiple listners properly -->
+
+
+
+
+<!-- event is an action that happen in browser ex:- clicking a button, moving a mouse , pressing a key
+    submiting form ,loading page etc
+
+    --js can detect this events and respond to them
+    --types of events
+    1. mouse events - click, dblclick, mouseover, mouseout, mousedown, mouseup
+    2. keyboard events - keydown, keyup, keypress
+    3. browser events - 
+
+    ** addEventListner() method - is js methos used to attch an event handler to an html element so that specific function
+     run when a prarticular event occur
+    
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Analyzer</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Productivity Analyzer</h1>
+        <h2>Fill some info about your daily routine and get the score based on your day spent</h2>
+
+        <!-- NEW DATE INPUT -->
+        <h3>Enter Today's Date:</h3>
+        <input type="date" id="todayDate"><br><br>
+
+        <h3>Enter your study hours:</h3>
+        <input type="number" step="0.1" min="0" max="24" id="study" placeholder="STUDY ">
+
+        <h3>The time that you gave for playing Outdoor games:</h3>
+        <input type="number" step="0.1" min="0" max="24" id="play" placeholder="PLAY ">
+
+        <h3>The time you spend in school or college class </h3>
+        <input type="number" step="0.1" min="0" max="24" id="class" placeholder="COLLEGE OR CLASS ">
+
+        <h3>The time you spend in Learning new things (other than study) </h3>
+        <input type="number" step="0.1" min="0" max="24" id="learning" placeholder="LEARNING NEW THINGS ">
+
+        <h3>The time that was you passed as not doing anything</h3>
+        <input type="number" step="0.1" min="0" max="24" id="timepass" placeholder="TIMEPASS ">
+
+        <br><br>
+
+        <!-- Removed inline onclick -->
+        <button id="calculateBtn" style="
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;">
+            Calculate Score
+        </button>
+
+        <h2 id="result"></h2>
+
+    </div>
+
+    <script src="index.js">
+    </script>
+
+</body>
+
+</html>
